@@ -7,7 +7,7 @@ app.use(cors());
 app.options('*', cors());
 
 //Önceden yapılandırılmış bir bağlantı noktası yoksa PORT 5000'i kullan
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 8080
 
 var data = require("./musteriler.json");
 
@@ -16,5 +16,5 @@ app.get("/", function(req, res) {
 });
 
 app.listen(PORT, function() {
-  console.log("Server running on port 5000...");
+  console.log("Server running on port 8080...");
 });
